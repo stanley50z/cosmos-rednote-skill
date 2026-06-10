@@ -11,7 +11,7 @@ Default brand voice: **Cosmosworks** (editorial e-bike / electric-assist). See `
 
 ## What To Produce
 
-Per invocation: **3 候选组合** for blind selection (盲选). Each 组合 is:
+Per invocation: **5 候选组合**, each with **5 variants**. Each 组合 is one distinct angle on the same content. Each variant within a 组合 is a complete set:
 
 ```
 标题   —— 15-20 字，偏正式·客观·带搜索关键词（不上封面，给正文/搜索）
@@ -19,7 +19,7 @@ Per invocation: **3 候选组合** for blind selection (盲选). Each 组合 is:
 副文字 —— ≤12 字，一个具体回报点 / 搜索关键词（封面次要的字）
 ```
 
-3 组合角度必须真正不同，盲选才是真选择。
+5 组合角度必须真正不同。同一组合内的 5 个 variant 走同一角度、不同措辞——让盲选有真实宽度。
 
 ## Core Rule
 
@@ -70,13 +70,17 @@ Compress any input into the **素材蒸馏 matrix**:
 
 Pull the one real number and the one real feeling — those anchor both the title and the cover text. Each 标题 must bite ≥2 dimensions; each 封面 must bite 情绪 + (主体 or 数字).
 
-### 3. Write 3 候选组合
+### 3. Write 5 候选组合 × 5 Variants Each
 
-Route first: from `title-framework.md` L.1 (账号类型) × L.2 (内容类型), pick 3–4 candidate 风格 (K). Assign a **different** 风格 to each of the 3 候选 so the choice is real.
+**Generate freely first.** Write all 5 候选角度 from instinct based on the distilled source material — follow the emotional angle that feels truest, not a framework slot. The goal is 5 genuinely different perspectives on the same fact.
 
-For each 组合:
+After settling the 5 angles, **cross-reference** `title-framework.md` K styles and L routing as a *check*, not a template: verify the 5 are actually different, and use the K list to spot an angle you missed or to sharpen tone. You are not required to match a K style — only to ensure real variety.
 
-1. **标题** — formal/objective, **15-20 字** (优质笔记门槛), ≥2 蒸馏维度, 带搜索关键词. Apply K → H → G stacking (see `title-framework.md`).
+For each 组合, write **5 variants** — same underlying angle, different phrasing, different level of bluntness or warmth. Variants within a 组合 should feel like 5 people saying the same thing in their own voice, not 5 copies of the same sentence with one word swapped.
+
+For each variant:
+
+1. **标题** — formal/objective, **15-20 字** (优质笔记门槛), ≥2 蒸馏维度, 带搜索关键词. H sentence structures and G keyword matrix in `title-framework.md` are available as tools, not mandatory molds.
 2. **主文字** — ≤10 字, emotional hook. Different sentence from the title, same fact. Largest text on cover.
 3. **副文字** — ≤12 字, one specific payoff or searchable detail. Smaller text, near 主文字. Size contrast between 主 and 副 is what makes it read as a poster not a caption.
 4. Fold the searchable keyword into the hook — don't bolt it on separately.
@@ -94,11 +98,19 @@ Then run every line through the **self-check** in `references/cover-text.md`:
 
 Show the user:
 
-1. **3 候选组合** as plain text (标题 / 主文字 / 副文字), clearly labeled 组合 A / B / C.
-2. One line of rationale: which 范式, which 3 风格 (from L.2), why these angles.
+1. **5 候选组合**, each labeled 组合 A–E, each with 5 variants labeled v1–v5. Format each 组合 as a table:
+
+   | | 标题 | 主文字 | 副文字 |
+   |---|---|---|---|
+   | v1 | … | … | … |
+   | v2 | … | … | … |
+   | v3 | … | … | … |
+   | v4 | … | … | … |
+   | v5 | … | … | … |
+
+2. One line of rationale per 组合: what angle it takes and what makes it distinct from the others.
 3. Brief instruction: "发群里让同事盲选，遮住一边仍然想点就合格。"
 4. **下游 handoff（简短）：**
-   - → **03 图组**：图组 ≥5 张，节奏 钩子图→展开图→细节图→收尾图；3 版封面做 A/B 测试。
    - → **04 正文**：开头 2 行复述封面钩子（复用主文字）再落到具体场景。Draft these 2 lines based on the winning 组合.
    - → **05 标签**：输出一组 6 维关键词种子（人群/场景/产品/功效/类目/竞品），产品/场景词与封面里的搜索关键词同词，供 tag 直接抄。提醒用精准话题，避大词（如不用 #骑行，用 #城市通勤电助力 / #公路车新手）。
 
@@ -110,5 +122,5 @@ Show the user:
 - **平视感**: peer voice, never "我来教你".
 - **0 emoji** preferred, max 1.
 - No **违禁词** — 最 / 第一 / 唯一 / 国家级 / 顶级 / 首个 and any absolute or unverified claim. Replace superlatives with concrete numbers.
-- The 3 候选 must be genuinely different angles for real 盲选.
+- The 5 候选 must be genuinely different angles for real 盲选. Variants within a 组合 vary phrasing, not angle.
 - If content involves live product specs or claims, verify or flag — don't state unverified numbers (also a 红线/违禁词 risk).
