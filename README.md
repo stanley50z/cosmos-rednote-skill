@@ -33,32 +33,63 @@ Core rule: **封面 ＝ 标题，但不重复** — same fact, different sentenc
 
 ## Install
 
-### Option 1 — clone directly (recommended)
+The skill lives in one place on disk; both agent harnesses point at it via a junction/symlink.
+
+### Step 1 — clone the repo
 
 **Mac / Linux:**
 ```bash
-git clone https://github.com/stanley50z/cosmos-rednote-skill.git ~/.claude/skills/cosmos-rednote-skill
+git clone https://github.com/stanley50z/cosmos-rednote-skill.git ~/skills/cosmos-rednote-skill
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/stanley50z/cosmos-rednote-skill.git "$env:USERPROFILE\.claude\skills\cosmos-rednote-skill"
+git clone https://github.com/stanley50z/cosmos-rednote-skill.git "$env:USERPROFILE\skills\cosmos-rednote-skill"
 ```
 
-### Option 2 — paste this into Claude Code
+> You can clone anywhere — just replace `~/skills/cosmos-rednote-skill` with your preferred path in the link commands below.
+
+### Step 2 — link into Claude Code (`~/.claude/skills/`)
+
+**Mac / Linux:**
+```bash
+mkdir -p ~/.claude/skills
+ln -s ~/skills/cosmos-rednote-skill ~/.claude/skills/cosmos-rednote-skill
+```
+
+**Windows (PowerShell — no admin needed, uses directory junction):**
+```powershell
+cmd /c mklink /J "$env:USERPROFILE\.claude\skills\cosmos-rednote-skill" "$env:USERPROFILE\skills\cosmos-rednote-skill"
+```
+
+### Step 3 — link into the broader agent harness (`~/.agents/skills/`)
+
+**Mac / Linux:**
+```bash
+mkdir -p ~/.agents/skills
+ln -s ~/skills/cosmos-rednote-skill ~/.agents/skills/cosmos-rednote-skill
+```
+
+**Windows (PowerShell):**
+```powershell
+cmd /c mklink /J "$env:USERPROFILE\.agents\skills\cosmos-rednote-skill" "$env:USERPROFILE\skills\cosmos-rednote-skill"
+```
+
+### Option — paste this into any agent with shell access
 
 ```text
 Help me install cosmos-rednote-skill. Please:
-1. Ensure ~/.claude/skills/ exists (create it if not)
-2. Run: git clone https://github.com/stanley50z/cosmos-rednote-skill.git ~/.claude/skills/cosmos-rednote-skill
-3. Verify: ls ~/.claude/skills/cosmos-rednote-skill/ should show SKILL.md and references/
-4. Tell me when done
+1. git clone https://github.com/stanley50z/cosmos-rednote-skill.git ~/skills/cosmos-rednote-skill
+2. mkdir -p ~/.claude/skills && ln -s ~/skills/cosmos-rednote-skill ~/.claude/skills/cosmos-rednote-skill
+3. mkdir -p ~/.agents/skills && ln -s ~/skills/cosmos-rednote-skill ~/.agents/skills/cosmos-rednote-skill
+4. Verify both links resolve to SKILL.md and references/ and tell me when done
 ```
 
 ### Update
 
 ```bash
-cd ~/.claude/skills/cosmos-rednote-skill && git pull
+cd ~/skills/cosmos-rednote-skill && git pull
+# Both harness links pick up the change automatically — no re-linking needed
 ```
 
 ---

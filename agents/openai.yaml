@@ -1,0 +1,8 @@
+interface:
+  display_name: "Cosmos Rednote Skill · 小红书标题+封面文字"
+  short_description: "Generate 3 candidate Rednote post titles (15-20 字) + cover image text (主文字 ≤10 字 / 副文字 ≤12 字) from any input."
+  brand_color: "#c7ff3e"
+  default_prompt: "Use $cosmos-rednote-skill to generate 3 candidate combinations of 标题 + 主文字 + 副文字 for this content."
+
+policy:
+  allow_implicit_invocation: true
